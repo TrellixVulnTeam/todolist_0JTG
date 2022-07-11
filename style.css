@@ -1,6 +1,206 @@
 body {
+  width: 100%;
+  background-color: #dbd5d5;
+}
+
+main {
+  width: 100%;
+}
+
+* {
   margin: 0px;
   padding: 0px;
+}
+
+@font-face {
+  font-family: "Robot";
+  src: url("Roboto-Bold.ttf");
+}
+header {
+  font-family: "Robot", sans-serif;
+}
+
+.add {
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background: green;
+  color: white;
+  cursor: pointer;
+}
+
+.add:hover {
+  opacity: 0.8;
+}
+
+.list .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3px;
+}
+.list .buttons button {
+  width: 45%;
+  padding: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #87CEEB;
+}
+
+.lists {
+  width: 95%;
+  margin: auto;
+}
+.lists .list {
+  margin-bottom: 3px;
+}
+.lists .list-name {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #146ebe;
+  color: white;
+  margin: auto;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.lists .list-name:hover {
+  opacity: 0.8;
+}
+
+.symbol-plus {
+  width: 12px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  left: 20px;
+  border-radius: 2px;
+}
+
+.symbol-plus::before {
+  content: " ";
+  width: 12px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  border-radius: 2px;
+  transform: rotate(90deg);
+}
+
+.dots {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  background-image: url("dots.svg");
+  background-repeat: no-repeat;
+  border-radius: 0px 5px 5px 0px;
+  background-position: center;
+  background-size: 15%;
+  cursor: pointer;
+}
+
+.tasks {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  font-size: 18px;
+  overflow: hidden;
+  height: 0px;
+}
+
+.task {
+  width: 90%;
+  margin: auto;
+  padding: 12px 0px 12px 10px;
+  border-bottom: 1px solid #bdb8b8;
+  position: relative;
+}
+
+.check {
+  width: 18px;
+  height: 18px;
+  border: 2px solid black;
+  border-radius: 3px;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
+.check-val {
+  background-image: url("check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.options {
+  position: absolute;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  right: 40px;
+  bottom: 20px;
+  display: none;
+}
+.options ul {
+  list-style-type: none;
+}
+.options ul li {
+  font-size: 15px;
+  color: black;
+}
+.options ul :nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.form-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  position: fixed;
+  border: 1px solid black;
+  border-radius: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px 20px;
+  background-color: white;
+}
+.form-add label {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.form-add input {
+  margin: 15px 0 15px 0;
+  font-size: 18px;
+}
+.form-add button {
+  width: 60px;
+  margin: auto;
+  padding: 5px;
+  background-color: #87CEEB;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 10px 0;
+  border-bottom: 1px solid #c4bdbd;
+  box-shadow: 5px 0px 10px #696565;
+  color: #87CEEB;
+  margin-bottom: 15px;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
