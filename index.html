@@ -11,17 +11,26 @@
         <h1>ToDoList</h1>
     </header>
     <main>
-        <div class="lists">
-            
-        </div>
-        <div class="form-add">
+        <div class="lists"></div>
+        <div id="form-add">
             <label for="name">
                 Name new list
             </label>
-            <input type="text" name="name" autofocus>
-            <button>Send</button>
+            <div id="mess-validation"></div>
+            <input type="text" name="name" maxlength="20">
+            <button id="send">Send</button>
+            <button id="cancel">Cancel</button>
         </div>
-        <button class="add">Add New List</button>
+        <div id="enter-task">
+            <label for="task-name">
+                Name your new task
+            </label>
+            <div id="val-task-name"></div>
+            <input type="text" name="task-name" maxlength="20">
+            <button id="send-task">Send</button>
+            <button id="cancel-task">Cancel</button>
+        </div>
+        <button id="add">Add New List</button>
     </main>
 </body>
 <script src="app.js"></script>

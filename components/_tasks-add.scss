@@ -1,0 +1,30 @@
+#enter-task{
+    width: 70%;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    display: none;
+    & input{
+        margin: 15px 0 15px 0;
+        font-size: 18px;
+        width: 90%;
+    };
+    & button{
+        width: 60px;
+         margin: 5px auto;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: $primaryColor;
+    }
+}
+.enter-task-active{
+    display: block !important;
+}
