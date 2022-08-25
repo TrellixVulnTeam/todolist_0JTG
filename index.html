@@ -2,36 +2,22 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>ToDoList</title>
 </head>
 <body>
     <header>
         <h1>ToDoList</h1>
+        <div id="burger">
+            <div id="barre"></div>
+        </div>
     </header>
-    <main>
-        <div class="lists"></div>
-        <div id="form-add">
-            <label for="name">
-                Name new list
-            </label>
-            <div id="mess-validation"></div>
-            <input type="text" name="name" maxlength="20">
-            <button id="send">Send</button>
-            <button id="cancel">Cancel</button>
-        </div>
-        <div id="enter-task">
-            <label for="task-name">
-                Name your new task
-            </label>
-            <div id="val-task-name"></div>
-            <input type="text" name="task-name" maxlength="20">
-            <button id="send-task">Send</button>
-            <button id="cancel-task">Cancel</button>
-        </div>
-        <button id="add">Add New List</button>
-    </main>
+    <nav>
+        <ul>
+            <li id="new-list-button">Create new list</li>
+        </ul>
+    </nav>
 </body>
-<script src="app.js"></script>
+<script src="./dist/main.js"></script>
 </html>

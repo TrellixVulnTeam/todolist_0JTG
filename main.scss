@@ -1,11 +1,3 @@
-@import "./utils/variables";
-@import 'utils/functions';
-@import 'utils/mixins';
-@import 'base/base';
-@import 'base/reset';
-@import 'base/fonts';
-@import 'components/buttons';
-@import 'components/lists';
-@import 'components/form-add';
-@import 'components/tasks-add';
-@import 'layouts/header';
+@import "./base/body";
+@import "./layouts/header";
+@import "./layouts/nav";

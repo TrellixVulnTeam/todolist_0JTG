@@ -1,0 +1,30 @@
+nav{
+    border: 1px solid black;
+    width: 80%;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    & ul{
+        & li{
+            text-align: center;
+            font-size: 25px;
+            padding: 10px 0 10px 0;
+            &:nth-child(1){
+                font-weight: bold;
+            }
+        }
+        &:nth-child(1){
+            background-color: rgb(167, 161, 161);
+            cursor: pointer;
+        }
+        & input{
+            width: 100%;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+        }
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
